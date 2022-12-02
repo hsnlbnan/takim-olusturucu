@@ -43,6 +43,7 @@ function App() {
         <a
           href="https://www.linkedin.com/in/husnu/"
           target="_blank"
+          rel="noreferrer"
           className="text-blue-600 dark:text-blue-500 hover:underline"
         >
           Hüsnü Lübnan
@@ -68,10 +69,7 @@ function App() {
                 </h5>
               </div>
               <div class="flow-root">
-                <ul
-                  role="list"
-                  class="divide-y divide-gray-200 dark:divide-gray-700"
-                >
+                <ul class="divide-y divide-gray-200 dark:divide-gray-700">
                   {item.map((item, index) => {
                     return (
                       <li class="py-3 sm:py-4" key={index}>
