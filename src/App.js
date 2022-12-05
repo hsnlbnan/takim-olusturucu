@@ -8,27 +8,20 @@ function App() {
 
   const buttonOnClick = () => {
     const grouped = randomizeAndSplit(data, teamSize);
-    if (
-      grouped !== null &&
-      grouped.length > 0 &&
-      grouped[0].length > 0 &&
-      grouped[1] !== null
-    ) {
-      setGrouped(grouped);
-    }
+    setGrouped(grouped);
   };
 
   const handleTextChange = (e) => {
     let value = e.target.value;
     if (value.includes("\n")) {
-      value = value.split("\n");
+      setData(value.split("\n").filter((i) => i));
     }
     if (value.length === 0) {
       return;
     }
-    setData(value);
   };
 
+  console.log(data);
   return (
     <div className="container mx-auto mt-9">
       <h1 className="mb-[20px] text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white ">

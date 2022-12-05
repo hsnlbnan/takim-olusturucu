@@ -11,18 +11,8 @@ export function randomizeAndSplit(data, chunkSize) {
     arrayOfArrays.push(shuffled.slice(i, i + chunkSize));
   }
 
-  arrayOfArrays.forEach((array) => {
-    array.forEach((item) => {
-      if (item === "") {
-        delete array[array.indexOf(item)];
-      }
-    });
+  arrayOfArrays.filter((el) => Object.keys(el).length);
 
-    array = array.filter((item) => item !== undefined);
-
-    if (array.length === 0) {
-      delete arrayOfArrays[arrayOfArrays.indexOf(array)];
-    }
-  });
+  console.log(arrayOfArrays);
   return arrayOfArrays;
 }
