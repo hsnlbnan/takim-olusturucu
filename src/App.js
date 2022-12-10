@@ -22,6 +22,7 @@ function App() {
   };
 
   // console.log(data);
+
   return (
     <div className="container mx-auto mt-9">
       <h1 className="mb-[20px] text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white ">
