@@ -6,8 +6,11 @@ import ScreenShotIcon from "./components/Icon/ScreenShot";
 import html2canvas from "html2canvas";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
+import ReactGA from "react-ga";
 
 function App() {
+  ReactGA.initialize("G-CLCML6BC6G");
+
   const [data, setData] = useState(null);
   const [grouped, setGrouped] = useState(null);
   const [teamSize, setTeamSize] = useState(2);
