@@ -9,7 +9,7 @@ import "react-tooltip/dist/react-tooltip.css";
 import ReactGA from "react-ga";
 
 function App() {
-  ReactGA.initialize("G-CLCML6BC6G");
+  ReactGA.initialize("G-BKTTQ8Y8Q1");
 
   const [data, setData] = useState(null);
   const [grouped, setGrouped] = useState(null);
