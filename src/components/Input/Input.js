@@ -29,7 +29,7 @@ export const CustomTextArea = ({ onChange, buttonOnClick, setTeamSize }) => {
               ref={textAreaRef}
             ></textarea>
           </div>
-          <div className="flex items-center justify-between px-3 py-2 border-t">
+          <div className="flex items-start gap-3 md:gap-0 md:items-center justify-between px-3 py-2 border-t flex-col-reverse md:flex-row">
             <button
               type="button"
               onClick={buttonOnClick}

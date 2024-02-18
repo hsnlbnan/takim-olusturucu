@@ -47,7 +47,7 @@ function App() {
 
   return (
     <>
-      <div className="container mx-auto mt-9">
+      <div className="container mx-auto mt-9 px-4 md:px-0">
         <h1 className="mb-[20px] text-4xl font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
           takim-
           <span className="underline underline-offset-3 decoration-8 decoration-blue-400 ">
