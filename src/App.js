@@ -8,6 +8,7 @@ import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
 import ReactGA from "react-ga";
 import { Analytics } from "@vercel/analytics/react";
+import { Helmet } from "react-helmet";
 
 function App() {
   ReactGA.initialize("G-BKTTQ8Y8Q1");
@@ -47,6 +48,21 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <title>Takım Oluşturucu | Rastgele Takım Oluşturma Aracı</title>
+        <meta name="description" content="Hızlı ve kolay bir şekilde rastgele takımlar oluşturun. İsim listesini girin, takım büyüklüğünü seçin ve takımlarınızı oluşturun." />
+        <meta name="keywords" content="takım oluşturucu, random takım, takım oluşturma, grup oluşturma" />
+        <meta name="author" content="Hüsnü Lübnan" />
+        <meta property="og:title" content="Takım Oluşturucu | Rastgele Takım Oluşturma Aracı" />
+        <meta property="og:description" content="Hızlı ve kolay bir şekilde rastgele takımlar oluşturun." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://takim-olustur.com" />
+        <meta property="og:author" content="https://husnu.dev" />
+        <link rel="canonical" href="https://takim-olustur.com" />
+        <html lang="tr" />
+        <meta property="og:locale" content="tr_TR" />
+      </Helmet>
+
       <div className="mx-auto mt-9 px-4 md:px-0 container">
         <h1 className="mb-[20px] font-bold text-4xl text-gray-900 md:text-5xl lg:text-6xl leading-none tracking-tight">
           takim-
@@ -58,14 +74,14 @@ function App() {
 
         <p className="mb-[20px] font-normal text-gray-500 text-sm">
           <a
-            href="https://www.linkedin.com/in/husnu/"
+            href="https://husnu.dev"
             target="_blank"
             rel="noreferrer"
             className="text-blue-600 hover:underline"
           >
             Hüsnü Lübnan
           </a>{" "}
-          tarafından gelistirildi.
+          tarafından geliştirildi.
         </p>
 
         <CustomTextArea
