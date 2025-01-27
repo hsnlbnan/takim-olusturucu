@@ -6,13 +6,9 @@ import ScreenShotIcon from "./components/Icon/ScreenShot";
 import html2canvas from "html2canvas";
 import { Tooltip } from "react-tooltip";
 import "react-tooltip/dist/react-tooltip.css";
-import ReactGA from "react-ga";
-import { Analytics } from "@vercel/analytics/react";
 import { Helmet } from "react-helmet";
 
 function App() {
-  ReactGA.initialize("G-BKTTQ8Y8Q1");
-
   const [data, setData] = useState(null);
   const [grouped, setGrouped] = useState(null);
   const [teamSize, setTeamSize] = useState(2);
@@ -184,7 +180,6 @@ function App() {
           <span className="text-white text-xs">PNG olarak kaydet</span>
         </Tooltip>
       </div>
-      <Analytics />
       <script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8616192210761755"
